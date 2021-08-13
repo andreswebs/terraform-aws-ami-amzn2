@@ -38,14 +38,14 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_ami"></a> [ami](#output\_ami) | n/a |
-| <a name="output_ami_id"></a> [ami\_id](#output\_ami\_id) | n/a |
+| <a name="output_ami"></a> [ami](#output\_ami) | SSM parameter resource containing the AMI data |
+| <a name="output_ami_id"></a> [ami\_id](#output\_ami\_id) | AMI ID |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.54.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.50.0 |
 
 ## Requirements
 
