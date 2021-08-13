@@ -8,12 +8,12 @@ Fetch the most recent Amazon Linux 2 AMI.
 Example:
 
 ```hcl
-module "ubuntu_20_04_latest" {
-  source  = "github.com/andreswebs/terraform-aws-ami-ubuntu"
+module "amzn2_latest" {
+  source  = "github.com/andreswebs/terraform-aws-ami-amzn2"
 }
 
 locals {
-  ami_id = module.ami_ubuntu_20_04_latest.ami.image_id
+  ami_id = module.amzn2_latest.ami_id
 }
 
 ## --> use `local.ami_id
