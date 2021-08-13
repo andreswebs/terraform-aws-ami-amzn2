@@ -1,7 +1,7 @@
 # terraform-aws-ami-amzn2
 
 [//]: # (BEGIN_TF_DOCS)
-Fetch the most recent Ubuntu 20.04 AMI by default.
+Fetch the most recent Amazon Linux 2 AMI.
 
 ## Usage
 
@@ -25,10 +25,10 @@ locals {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_ami_slug"></a> [ami\_slug](#input\_ami\_slug) | Slug to search | `string` | `"ubuntu-focal-20.04"` | no |
-| <a name="input_arch"></a> [arch](#input\_arch) | Processor architecture | `string` | `"amd64"` | no |
-| <a name="input_most_recent"></a> [most\_recent](#input\_most\_recent) | Use the most recent? | `bool` | `true` | no |
-| <a name="input_owners"></a> [owners](#input\_owners) | List of AMI owner AWS account IDs to search | `list(string)` | <pre>[<br>  "099720109477"<br>]</pre> | no |
+| <a name="input_arch"></a> [arch](#input\_arch) | Processor architecture | `string` | `"x86_64"` | no |
+| <a name="input_minimal"></a> [minimal](#input\_minimal) | Use minimal? | `bool` | `false` | no |
+| <a name="input_storage_type"></a> [storage\_type](#input\_storage\_type) | AMI storage type | `string` | `"gp2"` | no |
+| <a name="input_virt_type"></a> [virt\_type](#input\_virt\_type) | Virtualization type | `string` | `"hvm"` | no |
 
 ## Modules
 
@@ -38,14 +38,14 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_ami"></a> [ami](#output\_ami) | The AWS AMI resource |
-| <a name="output_ami_id"></a> [ami\_id](#output\_ami\_id) | AMI ID |
+| <a name="output_ami"></a> [ami](#output\_ami) | n/a |
+| <a name="output_ami_id"></a> [ami\_id](#output\_ami\_id) | n/a |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.50.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.54.0 |
 
 ## Requirements
 
@@ -58,7 +58,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_ami.ubuntu](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) | data source |
+| [aws_ssm_parameter.amzn2](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter) | data source |
 
 [//]: # (END_TF_DOCS)
 
