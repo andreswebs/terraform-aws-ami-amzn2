@@ -2,19 +2,6 @@
 * Fetch the most recent Amazon Linux 2 AMI.
 */
 
-terraform {
-  required_version = ">= 1.0.0"
-
-  required_providers {
-
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 3.50.0"
-    }
-
-  }
-}
-
 locals {
   #https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-public-parameters-ami.html
   parameter_path = "/aws/service/ami-amazon-linux-latest"
