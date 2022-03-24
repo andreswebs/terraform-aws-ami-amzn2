@@ -1,7 +1,9 @@
 # terraform-aws-ami-amzn2
 
-[//]: # (BEGIN_TF_DOCS)
 Fetch the most recent Amazon Linux 2 AMI.
+
+[//]: # (BEGIN_TF_DOCS)
+
 
 ## Usage
 
@@ -45,14 +47,14 @@ No modules.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.50.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.50 |
 
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.50.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.1 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.50 |
 
 ## Resources
 

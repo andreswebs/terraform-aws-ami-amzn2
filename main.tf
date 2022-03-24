@@ -1,7 +1,3 @@
-/**
-* Fetch the most recent Amazon Linux 2 AMI.
-*/
-
 locals {
   #https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-public-parameters-ami.html
   parameter_path = "/aws/service/ami-amazon-linux-latest"
